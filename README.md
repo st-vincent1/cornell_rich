@@ -24,11 +24,9 @@ An example file with sample annotations can be found in the `example.tsv` file.
 To extract the dataset from scratch, you can run the following script:
 
 ```
-python extract.py --corpus_path <path_to_dialogue_corpus> --output_path <output_path>
+bash src/download_cornell_base.sh
+python src/create_cornell_rich.py
 ```
-
-
-where `<path_to_dialogue_corpus>` is the path to the original dialogue corpus, and `<output_path>` is the path to the directory where the extracted annotations will be stored.
 
 ## Download
 
