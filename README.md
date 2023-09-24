@@ -1,7 +1,7 @@
 # Cornell-rich
 
 Cornell-rich is a set of rich character (and film) annotations for another open-source corpus of film dialogue. 
-The corpus contains annotations for almost 600 movies, with a total of 863 speakers utterring up to 145K lines and [NUMBER OF TOKENS] tokens.
+The corpus contains annotations for almost 600 movies, with a total of 863 speakers utterring up to 145K lines of the [Cornell Movie Dialog Corpus](https://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html).
 
 ## Data Format
 
@@ -37,17 +37,12 @@ wget https://example.com/xyz-corpus.zip
 unzip xyz-corpus.zip
 ```
 
-
-## License
-
-The Cornell-rich corpus is released under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
-
 ## Paper
 
 If you use Cornell-rich in your research, please cite the following paper:
 
-> AUTHOR(S). "TITLE." *JOURNAL/CONFERENCE*, YEAR.
+[Vincent et al. 2023, Personalised Language Modelling of Screen Characters Using Rich Metadata Annotations. arXiv.](https://arxiv.org/abs/2303.16618)
 
 ## Contact
 
-For any questions or comments, please contact sebastian.tate.vincent@gmail.com.
+For any questions or comments, please raise an Issue within this repository.
