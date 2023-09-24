@@ -7,17 +7,21 @@ The corpus contains annotations for almost 600 movies, with a total of 863 speak
 
 The corpus is provided in a comma-separated value (CSV) format with the following columns:
 
-- **movie_id**: ID of the movie in the original dialogue corpus
-- **line_id**: ID of the line in the original dialogue corpus
-- **character**: name of the character speaking the line
-- **character_gender**: gender of the character speaking the line
-- **character_type**: type of the character (e.g., protagonist, antagonist, supporting)
+- **name**: character's name
 - **movie_title**: title of the movie
-- **year**: year of the movie
-- **genre**: genre of the movie
-- **line_text**: text of the line spoken by the character
-
-An example file with sample annotations can be found in the `example.tsv` file.
+- **number_of_lines**: number of lines spoken by the given character in the corpus
+- **age_bracket**: the age category of the character
+- **profession**: profession of the character (if any)
+- **religion**: religion of the character (if any)
+- **country_of_origin**: country of origin of the character
+- **additional_info**: any additional information about the character, such as trivia or who played them
+- **quote**: a characteristic quote of the character
+- **annotated**: whether the character was considered for annotations
+- **speaker_id**: ID of the speaker
+- **movie_id**: ID of the movie
+- **gender**: gender of the speaker
+- **description**: character description for the speaker
+- **source**: where the information was sourced
 
 ## Extraction
 
@@ -26,15 +30,6 @@ To extract the dataset from scratch, you can run the following script:
 ```
 bash src/download_cornell_base.sh
 python src/create_cornell_rich.py
-```
-
-## Download
-
-Alternatively, you can download the prepared dataset by running the following command:
-
-```
-wget https://example.com/xyz-corpus.zip
-unzip xyz-corpus.zip
 ```
 
 ## Paper
